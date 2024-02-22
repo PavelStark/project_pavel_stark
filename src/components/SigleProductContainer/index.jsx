@@ -88,11 +88,13 @@ export default function SingleProductContainer() {
               />
             </div>
             </div>
-            </div>
-          <div className={style.descriptionContainer}></div>
+          </div>
+          </div>
+          <div className={style.descriptionContainer}>
           <p className={style.textTitle}>Description</p>
-          <p className={style.text}>{product.description}</p>
-        </div>
+            <p className={style.text}>{product.description}</p>
+            </div>
+        
      
       </div>
       </div>

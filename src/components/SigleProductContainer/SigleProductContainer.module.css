@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+
 .singleProductContainer {
   display: grid;
   margin-top: 40px;
@@ -8,7 +11,7 @@
     "image title"
     "image price"
     "image description";
-  grid-template-rows: 50px 100px 350px;
+  grid-template-rows: 50px 170px 350px;
 }
 
 .productImageContainer img {
@@ -38,12 +41,6 @@
   margin-top: 25px;
   width: 100%;
   grid-area: description;
-}
-
-.info {
-  width: 95%;
-  /* max-height: 400px; */
-  margin-left: 32px;
 }
 
 .priceContainer {
@@ -146,9 +143,11 @@
 }
 
 .text {
-  margin-top: 15px;
   font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
   color: rgb(40, 40, 40);
+  font-family: "Montserrat", sans-serif;
 }
 
 .plusAndMinusAndButtonContainer {
@@ -162,9 +161,9 @@
   }
 
   .singleProductContainer {
-    grid-template-columns: (1fr, 1fr);
     gap: 20px;
     margin-bottom: 70px;
+    grid-template-rows: 50px 180px 300px;
   }
 
   .price {
@@ -172,17 +171,16 @@
   }
 
   @media (max-width: 768px) {
-
     .singleProductContainer {
       grid-template-columns: 3fr 2fr;
       grid-template-areas:
         "image title"
         "image price"
-        "description";
-      grid-template-rows: 50px 130px 350px;
+        "description description";
+      grid-template-rows: 50px 250px auto;
     }
-    
-    .title{
+
+    .title {
       font-size: 32px;
     }
 
@@ -197,7 +195,7 @@
 
     .productImageContainer img {
       width: 100%;
-      height: 273px;
+      height: 328px;
     }
 
     .salePrice {
@@ -212,6 +210,20 @@
 }
 
 @media (max-width: 480px) {
+  .singleProductContainer {
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+      "title title"
+      "image price"
+      "description description";
+    grid-template-rows: 50px 250px auto;
+  }
+
+  .productImageContainer img {
+    width: 100%;
+    height: 179px;
+  }
+
   .salePrice {
     font-size: 48px;
     font-weight: 700;
