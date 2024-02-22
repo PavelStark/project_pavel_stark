@@ -18,6 +18,7 @@ export default function MainPage(props) {
 
   return (
     <div>
+      <div className={style.bannerContainer}>
       <div className={style.banner}>
         <p className={style.bannerText}>
           Amazing Discounts on Garden Products!
@@ -25,7 +26,8 @@ export default function MainPage(props) {
         <div className={style.ButtonCheckOutContainer}>
           <ButtonCheckOut text="Check out" onClick={handleClick} />
         </div>
-      </div>
+        </div>
+        </div>
       <div className="wrapper">
         <div className={style.linkButtonAllContainer}>
           <LinkButtonContainer title="Categories" />

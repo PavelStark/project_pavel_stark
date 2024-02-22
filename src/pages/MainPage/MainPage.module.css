@@ -1,6 +1,12 @@
+.bannerContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .banner {
   display: flex;
-  width: 100%;
+  max-width: 1440px;
   height: 600px;
   background-image: url("../../media/MainPageBackground.jpg");
   flex-direction: column;
@@ -20,6 +26,7 @@
 
 .categoriesNotAllContainer a{
 text-decoration: none;
+color: rgb(40, 40, 40);
 }
 
 .sale {

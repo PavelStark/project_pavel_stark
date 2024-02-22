@@ -41,9 +41,9 @@ export default function SingleProductContainer() {
         <img alt="Product" src={ROOT_URL + product.image} />
       </div>
 
-      <div className={style.info}>
+      
         <h2 className={style.title}>{product.title}</h2>
-
+        <div className={style.pricePlusMinusButtonContainer}>
         <div className={style.priceContainer}>
           <p className={style.salePrice}>
             {product.discont_price
@@ -87,12 +87,13 @@ export default function SingleProductContainer() {
               title="Add to cart"
               />
             </div>
-          </div>
+            </div>
+            </div>
           <div className={style.descriptionContainer}></div>
           <p className={style.textTitle}>Description</p>
           <p className={style.text}>{product.description}</p>
         </div>
-      </div>
+     
       </div>
       </div>
   );
