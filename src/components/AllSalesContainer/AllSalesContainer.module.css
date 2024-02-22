@@ -1,0 +1,69 @@
+
+
+
+.allSalesContainer a{
+  text-decoration: none;
+  color: black;
+}
+
+.priceContainer {
+  display: flex;
+  gap: 16px;
+  color: (rgba(221, 221, 221, 1));
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 16px;
+  width: 252px;
+}
+
+.itemTitle {
+  border: 1px solig red;
+  margin-top: 20px;
+  overflow: hidden;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 252px; 
+  height: 26px;
+}
+
+.sale {
+  text-decoration: line-through;
+  color: rgba(139, 139, 139, 1);
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.salePercent {
+  margin-top: 16px;
+  margin-right: 16px;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 34px;
+  background-color: rgba(51, 153, 51, 1);
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px 8px;
+}
+
+.allSalesContainer h2 {
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}

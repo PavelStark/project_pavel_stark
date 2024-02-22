@@ -1,0 +1,43 @@
+.couponBtn {
+  padding: 16px 32px 16px 32px;
+  margin-top: 16px;
+  background-color: #fff;
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.couponBtn:hover {
+  color: white;
+  background-color: #000000;
+}
+
+@media (max-width: 1000px) {
+  .couponBtn {
+    margin-left: -20px;
+    width: 110%;
+  }
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 480px){
+  .couponBtn {
+    margin-left: -240px;
+    width: 270%;
+    margin-top: 8px;
+  }
+}
+
+@media(max-width: 360px){
+  .couponBtn {
+    margin-left: -165px;
+    width: 270%;
+    margin-top: 8px;
+  }
+}

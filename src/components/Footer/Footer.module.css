@@ -1,0 +1,182 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  color: black;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.thin {
+  color: rgba(139, 139, 139, 1);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.bold {
+  font-size: 40px;
+}
+
+.phone,
+.social,
+.adress,
+.working_hours {
+  background-color: rgba(241, 243, 244, 1);
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.phone {
+  padding: 32px;
+  width: 117.5%;
+}
+
+.social {
+  padding: 32px;
+  width: 82.5%;
+  margin-left: 17.5%;
+}
+
+.adress {
+  padding: 32px;
+  width: 117.5%;
+}
+
+.working_hours {
+  padding: 32px;
+  width: 82.5%;
+  margin-left: 17.5%;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+}
+
+.map {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1000px) {
+  .footerContainer {
+    gap: 15px;
+  }
+
+  .phone {
+    width: 100%;
+  }
+
+  .social {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .adress {
+    width: 100%;
+  }
+
+  .working_hours {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone {
+    width: 130%;
+  }
+
+  .social {
+    width: 70%;
+    margin-left: 30%;
+  }
+
+  .adress {
+    width: 130%;
+  }
+
+  .working_hours {
+    width: 70%;
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .phone {
+    width: 100%;
+  }
+
+  .bold {
+    font-size: 28px;
+  }
+
+  .social {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .adress {
+    width: 100%;
+  }
+
+  .working_hours {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footerContainer {
+    gap: 10px;
+  }
+  .phone {
+    width: 100%;
+    padding: 24px 20px 24px 20px;
+
+  }
+
+  .social {
+    width: 100%;
+    margin-left: 0;
+    padding: 24px 20px 24px 20px;
+  }
+
+  .adress {
+    width: 100%;
+    padding: 24px 20px 24px 20px;
+    text-wrap: wrap;
+  }
+
+  .working_hours {
+    width: 100%;
+    margin-left: 0;
+    padding: 24px 20px 24px 20px;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+    padding: 24px 20px 24px 20px;
+  }
+  .bold {
+    font-size: 27px;
+  }
+}

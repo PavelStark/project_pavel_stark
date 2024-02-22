@@ -1,0 +1,264 @@
+.linkButtonAllContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.cartPageContainer {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.cartPageContainerLetf {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer {
+  outline: 1px solid rgba(139, 139, 139);
+  border-radius: 12px;
+  width: 780px;
+  height: 180px;
+  margin-bottom: 15px;
+  display: flex;
+  height: fit-content;
+}
+
+.imageContainer {
+  width: 200px;
+  height: 180px;
+}
+
+.imageContainer img {
+  width: 200px;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  object-fit: cover;
+}
+
+.cardInfoContainer {
+  margin: 20px 32px;
+  width: 100%;
+}
+
+.TitleAndCloseContainer {
+  width: 100%;
+  position: relative;
+}
+
+.TitleAndCloseContainer p {
+  display: flex;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
+  font-weight: 500;
+  width: 95%;
+  height: 40px;
+}
+
+.TitleAndCloseContainer img {
+  position: absolute;
+  display: flex;
+  font-size: 22px;
+  right: 0;
+  top: 0;
+}
+
+.TitleAndCloseContainer img:hover {
+  cursor: pointer;
+  border: 1px solid rgba(139, 139, 139);
+}
+
+.plusMinusAndPriceContainer {
+  display: flex;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.plusMinusContainer {
+  display: flex;
+  border-radius: 6px;
+  border-top: 1px solid rgba(139, 139, 139);
+  border-bottom: 1px solid rgba(139, 139, 139);
+  height: 58px;
+  align-items: center;
+}
+
+.priceContainer {
+  display: flex;
+  color: rgb(40, 40, 40);
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 32px;
+}
+
+.sale {
+  display: flex;
+  color: rgb(139, 139, 139);
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration-line: line-through;
+  line-height: 130%;
+  margin-left: 16px;
+  margin-top: 18px;
+}
+
+/* ------------------------------------------Form-------------------------------------------- */
+.minus {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(139, 139, 139);
+  border-radius: 6px;
+}
+
+.minus:hover {
+  cursor: pointer;
+}
+
+.number {
+  display: flex;
+  width: 96px;
+  height: 58px;
+  justify-content: center;
+  align-items: center;
+}
+
+.number p {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100%;
+  align-items: center;
+}
+
+.plus {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(139, 139, 139);
+  border-radius: 6px;
+}
+
+.plus:hover {
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.formAllContainer {
+  margin-left: 32px;
+  width: 548px;
+  height: 582px;
+  background-color: rgb(241, 243, 244);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.orderDetails {
+  color: rgb(40, 40, 40);
+  font-size: 40px;
+  font-weight: 700;
+  height: 100%;
+}
+
+.totalItems {
+  margin-top: 27px;
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(139, 139, 139);
+}
+
+.totalAndPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  color: rgb(139, 139, 139);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.totalPrice {
+  color: rgb(40, 40, 40);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 16px 32px 16px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
+}
+
+.lastInput {
+  margin-bottom: 12px;
+}
+
+.emptyBasketText {
+  margin-bottom: 40px;
+  overflow: hidden;
+  color: (#282828);
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.buttonContainer {
+  width: 57%;
+}
+
+.buttonContainer a {
+  text-decoration: none;
+  margin-bottom: 80px;
+}
+
+.linkButtonAllContainer2 {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .buttonContainer {
+    width: 68.5%;
+  }
+  .buttonNone {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .buttonContainer {
+    width: 95%;
+  }
+  .buttonNone {
+    display: none;
+  }
+  .linkButtonAllContainer2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: -40px;
+  }
+}

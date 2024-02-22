@@ -1,0 +1,129 @@
+.SortAllContainer {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.SortAllContainer label {
+  margin-right: 16px;
+}
+
+.SortAllContainer input {
+  margin-right: 40px;
+}
+
+.PriceSortContainer {
+  display: flex;
+  align-items: center;
+}
+
+.formContainer input {
+  width: 112px;
+  height: 36px;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 6px;
+  padding: 16px;
+  font-weight: 500;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.rightChild {
+  margin-left: -20px;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+}
+
+.myCheckbox {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgb(179, 178, 178);
+  border-radius: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.myCheckbox:checked:before {
+  left: -2px;
+  top: -2px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid rgb(179, 178, 178);
+  background-color: rgb(51, 153, 51);
+}
+
+.myCheckbox:checked:after {
+  appearance: none;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  border: 2px solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  top: 5px;
+  left: 12px;
+}
+
+.SortedContainer select {
+  font-weight: 500;
+  text-indent: 15px;
+  width: 200px;
+  height: 36px;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 6px;
+}
+
+@media (max-width: 967px) {
+  .PriceSortContainer {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .filterContainer{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .formContainer {
+    width: fit-content;
+  }
+  .PriceSortContainer {
+    width: 90%;
+  }
+
+  .SortAllContainer label {
+    margin-right: 16px;
+  }
+
+  .SortAllContainer input {
+    margin-right: 40px;
+  }
+  .formContainer {
+    display: flex;
+  }
+
+  .rightChild {
+    margin-left: -20px;
+  }
+}
