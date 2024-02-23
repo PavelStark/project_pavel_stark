@@ -37,6 +37,11 @@
 @media (max-width: 1000px) {
   .categoriesContainer {
     gap: 15px;
+    grid-template-columns: repeat(3, 2fr);
+    margin-bottom: 40px;
+  }
+  .categoryImage {
+    height: 250px;
   }
 }
 
@@ -44,6 +49,7 @@
   .categoriesContainer {
     grid-template-columns: repeat(2, 2fr);
     gap: 15px;
+    margin-bottom: 40px;
   }
   .categoriesNotAllContainer {
     grid-template-columns: repeat(2, 1fr);

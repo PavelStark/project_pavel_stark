@@ -4,12 +4,13 @@
 
 .CategoriesTitle {
   margin-top: 20px;
-  font-size: 64px;
+  font-size: clamp(40px, 7vw, 64px);
+  width: fit-content;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .CategoriesTitle {
     font-size: 56px;
     margin-top: 32px;
@@ -21,7 +22,7 @@
   .CategoriesTitle {
     font-size: 48px;
   }
-}
+} */
 
 @media (max-width: 360px) {
   .CategoriesTitle {
