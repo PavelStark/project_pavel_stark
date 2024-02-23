@@ -11,20 +11,19 @@ import ProductsListPage from "./pages/CategoryProductsPage/index.jsx";
 import SingleProductPage from "./pages/SigleProductPage/index.jsx";
 import CartPage from "./pages/CartPage/index.jsx";
 
-
 function App() {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<MainPage />}/>
+        <Route path="/" element={<MainPage />} />
         <Route path="/categories/all" element={<CategoriesPage />} />
-        <Route path='/categories/:id' element={<ProductsListPage />}/>
-        <Route path="/products/all" element={<ProductsPages />}/>
-        <Route path="/products/:id" element={<SingleProductPage />}/>
-        <Route path="/sales/all" element={<AllSalesPage />}/>
-        <Route path="/cart/" element={<CartPage />}/>
-        <Route path="*" element={<NotFoundPage />}/>
+        <Route path="/categories/:id" element={<ProductsListPage />} />
+        <Route path="/products/all" element={<ProductsPages />} />
+        <Route path="/products/:id" element={<SingleProductPage />} />
+        <Route path="/sales/all" element={<AllSalesPage />} />
+        <Route path="/cart/" element={<CartPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </div>
@@ -32,4 +31,3 @@ function App() {
 }
 
 export default App;
-

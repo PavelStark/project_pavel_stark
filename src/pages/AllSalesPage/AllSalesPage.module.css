@@ -1,25 +1,25 @@
 .allSalesTitle {
-    margin-top: 20px;
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-    .allSalesTitle {
-        font-size: 56px;
-    }
+  .allSalesTitle {
+    font-size: 56px;
+  }
 }
 
 @media (max-width: 480px) {
-    .allSalesTitle {
-        font-size: 48px;
-        width: 90%;
-    }
+  .allSalesTitle {
+    font-size: 48px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 431px) {
-    .allSalesTitle {
-        font-size: 40px;
-    }
+  .allSalesTitle {
+    font-size: 40px;
+  }
 }

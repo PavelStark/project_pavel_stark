@@ -13,11 +13,14 @@ export default function CategoriesContainer({ type }) {
     dispatch(fetchCategories(type));
   }, [dispatch, type]);
 
-
   return (
-    <div className={ type === "notAllCategories"  ? `${style.categoriesNotAllContainer}` : `${style.categoriesContainer}`}>
-
-
+    <div
+      className={
+        type === "notAllCategories"
+          ? `${style.categoriesNotAllContainer}`
+          : `${style.categoriesContainer}`
+      }
+    >
       {categories.map((elem) => (
         <Link to={"/categories/" + elem.id} key={elem.id}>
           <div>

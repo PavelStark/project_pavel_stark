@@ -1,7 +1,4 @@
-
-
-
-.allSalesContainer a{
+.allSalesContainer a {
   text-decoration: none;
   color: black;
 }
@@ -29,7 +26,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 252px; 
+  max-width: 252px;
   height: 26px;
 }
 

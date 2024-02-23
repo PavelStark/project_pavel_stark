@@ -5,10 +5,9 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-/*   border: 1px solid rgba(255, 0, 0, 0.615);
- */}
+}
 
-.container{
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -16,7 +15,6 @@
 .wrapper {
   max-width: 1360px;
   margin: 0 auto;
-  /* margin: 0 40px; */
 }
 
 @media (max-width: 1360px) {

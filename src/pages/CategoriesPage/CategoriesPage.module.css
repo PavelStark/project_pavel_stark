@@ -1,30 +1,30 @@
-.CategoriesPageContainer{
-    margin-top: 40px;
+.CategoriesPageContainer {
+  margin-top: 40px;
 }
 
-.CategoriesTitle{
-    margin-top: 20px;
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 40px;
+.CategoriesTitle {
+  margin-top: 20px;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
-@media(max-width: 768px){
-    .CategoriesTitle{
-        font-size: 56px;
-        margin-top: 32px;
-        margin-bottom: 24px;
-    }
+@media (max-width: 768px) {
+  .CategoriesTitle {
+    font-size: 56px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
 }
 
-@media(max-width: 480px){
-    .CategoriesTitle{
-        font-size: 48px;
-    }
+@media (max-width: 480px) {
+  .CategoriesTitle {
+    font-size: 48px;
+  }
 }
 
-@media(max-width: 360px){
-    .CategoriesTitle{
-        font-size: 40px;
-    }
+@media (max-width: 360px) {
+  .CategoriesTitle {
+    font-size: 40px;
+  }
 }

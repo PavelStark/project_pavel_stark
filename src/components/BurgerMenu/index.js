@@ -8,14 +8,19 @@ export default function BurgerMenu() {
   return (
     <div className={style.burgerMenuContainer}>
       <div
-        className={active ? `${style.burger_menu_active}` : `${style.burger_menu}`} onClick={() => setActive(!active)}>
+        className={
+          active ? `${style.burger_menu_active}` : `${style.burger_menu}`
+        }
+        onClick={() => setActive(!active)}
+      >
         <span className={style.line}></span>
         <span className={style.line}></span>
         <span className={style.line}></span>
       </div>
       <div
         className={active ? `${style.navbar_active}` : `${style.navbar}`}
-        onClick={() => setActive(!active)}>
+        onClick={() => setActive(!active)}
+      >
         <Link onClick={() => setActive(!active)} to={"/"}>
           {" "}
           Main Page{" "}

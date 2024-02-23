@@ -1,4 +1,4 @@
-.bannerContainer{
+.bannerContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,9 +24,9 @@
   height: fit-content;
 }
 
-.categoriesNotAllContainer a{
-text-decoration: none;
-color: rgb(40, 40, 40);
+.categoriesNotAllContainer a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
 }
 
 .sale {
@@ -49,18 +49,18 @@ color: rgb(40, 40, 40);
   padding: 16px 56px 16px 56px;
 }
 
-.topSalesContainer{
+.topSalesContainer {
   width: 100%;
 }
 
-.linkButtonCategoriesActive{
+.linkButtonCategoriesActive {
   display: none;
- }
- .linkButtonSalesActive{
+}
+.linkButtonSalesActive {
   display: none;
- }
+}
 
-@media(max-width: 1000px){
+@media (max-width: 1000px) {
   .ButtonCheckOutContainer {
     margin-left: -20px;
   }
@@ -81,45 +81,43 @@ color: rgb(40, 40, 40);
   }
 }
 
-@media(max-width: 768px){
-
+@media (max-width: 768px) {
   .bannerText {
     font-size: 68px;
   }
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px) {
   .bannerText {
     font-size: 60px;
   }
 
   .ButtonCheckOutContainer button {
     padding: 12px 52px 12px 52px;
-    }
-  
+  }
 }
 
-@media(max-width: 360px){
+@media (max-width: 360px) {
   .bannerText {
     font-size: 52px;
   }
-  .linkButtonSales{
+  .linkButtonSales {
     display: none;
   }
-  .linkButtonCategoriesActive{
-   margin-left: 90px;
-   margin-top: 0px;
-   margin-bottom: 60px;
-   display: block;
+  .linkButtonCategoriesActive {
+    margin-left: 90px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    display: block;
   }
-  .linkButtonSalesActive{
-    margin-top: 20px;;
+  .linkButtonSalesActive {
+    margin-top: 20px;
     margin-left: 90px;
     margin-bottom: 30px;
     display: block;
   }
 
-  .linkButtonCategories{
+  .linkButtonCategories {
     display: none;
   }
 }

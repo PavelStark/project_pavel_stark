@@ -14,10 +14,13 @@ export default function NotFoundPage() {
           alt="NotFoundPageImage"
         ></img>
         <p className={style.title}>Page Not Found </p>
-        <p className={style.text}>We’re sorry, the page you requested could not be found. Please go back to the homepage.</p>
+        <p className={style.text}>
+          We’re sorry, the page you requested could not be found. Please go back
+          to the homepage.
+        </p>
         <div className={style.btnContainer}>
-        <Link to="/">
-        <ButtonCheckOut text="Go Home" />
+          <Link to="/">
+            <ButtonCheckOut text="Go Home" />
           </Link>
         </div>
       </div>

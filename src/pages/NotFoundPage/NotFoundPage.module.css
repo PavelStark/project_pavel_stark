@@ -18,7 +18,7 @@
   text-decoration: none;
 }
 
-.btnContainer button{
+.btnContainer button {
   padding: 16px 56px 16px 56px;
   margin-bottom: 80px;
 }
@@ -43,7 +43,7 @@
     width: 65%;
   }
 
-  .btnContainer button{
+  .btnContainer button {
     margin-bottom: 60px;
   }
 }
@@ -77,8 +77,8 @@
     width: 100%;
   }
 
-  .btnContainer button{
-    padding: 12px 52px 12px 52px;;
+  .btnContainer button {
+    padding: 12px 52px 12px 52px;
     margin-bottom: 56px;
   }
 }

@@ -26,7 +26,6 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 // Дополнительный аргумент для Redux Thunk
 
-
 // Создание стора Redux с применением middleware Redux Thunk и передачей дополнительного аргумента
 const store = createStore(
   persistedReducer,
@@ -37,5 +36,3 @@ const store = createStore(
 const persistor = persistStore(store);
 
 export { store, persistor };
-
-

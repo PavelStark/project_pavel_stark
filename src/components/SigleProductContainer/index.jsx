@@ -36,67 +36,64 @@ export default function SingleProductContainer() {
 
   return (
     <div className="wrapper">
-    <div className={style.singleProductContainer}>
-      <div className={style.productImageContainer}>
-        <img alt="Product" src={ROOT_URL + product.image} />
-      </div>
+      <div className={style.singleProductContainer}>
+        <div className={style.productImageContainer}>
+          <img alt="Product" src={ROOT_URL + product.image} />
+        </div>
 
-      
         <h2 className={style.title}>{product.title}</h2>
         <div className={style.pricePlusMinusButtonContainer}>
-        <div className={style.priceContainer}>
-          <p className={style.salePrice}>
-            {product.discont_price
-              ? "$" + (product.discont_price * product.count).toFixed(2)
-              : "$" + (product.price * product.count).toFixed(2)}
-          </p>
-          <p className={style.price}>
-            {product.discont_price
-              ? "$" + (product.price * product.count).toFixed(2)
-              : ""}
-          </p>
-          <div
-            className={style.salePercentContainer}
-            style={{ display: product.discont_price ? "block" : "none" }}
-          >
-            <p className={style.sale}>{saleHandle()}</p>
+          <div className={style.priceContainer}>
+            <p className={style.salePrice}>
+              {product.discont_price
+                ? "$" + (product.discont_price * product.count).toFixed(2)
+                : "$" + (product.price * product.count).toFixed(2)}
+            </p>
+            <p className={style.price}>
+              {product.discont_price
+                ? "$" + (product.price * product.count).toFixed(2)
+                : ""}
+            </p>
+            <div
+              className={style.salePercentContainer}
+              style={{ display: product.discont_price ? "block" : "none" }}
+            >
+              <p className={style.sale}>{saleHandle()}</p>
+            </div>
+          </div>
+          <div className={style.addProductContainer}>
+            <div className={style.plusAndMinusAndButtonContainer}>
+              <div className={style.plusAndMinusContainer}>
+                <div
+                  onClick={() => dispatch(changeCountItemAction(-1))}
+                  className={style.minus}
+                >
+                  <img src={minus} alt="" />
+                </div>
+                <div className={style.number}>
+                  <p>{product.count}</p>
+                </div>
+                <div
+                  onClick={() => dispatch(changeCountItemAction(1))}
+                  className={style.plus}
+                >
+                  <img src={plus} alt="" />
+                </div>
+              </div>
+              <div className={style.btnContainer}>
+                <ButtonAddToCart
+                  onClick={() => dispatch(addItemAction(product))}
+                  title="Add to cart"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className={style.addProductContainer}>
-          <div className={style.plusAndMinusAndButtonContainer}>
-            <div className={style.plusAndMinusContainer}>
-              <div
-                onClick={() => dispatch(changeCountItemAction(-1))}
-                className={style.minus}
-              >
-                <img src={minus} alt="" />
-              </div>
-              <div className={style.number}>
-                <p>{product.count}</p>
-              </div>
-              <div
-                onClick={() => dispatch(changeCountItemAction(1))}
-                className={style.plus}
-              >
-                <img src={plus} alt="" />
-              </div>
-            </div>
-            <div className={style.btnContainer}>
-            <ButtonAddToCart
-              onClick={() => dispatch(addItemAction(product))}
-              title="Add to cart"
-              />
-            </div>
-            </div>
-          </div>
-          </div>
-          <div className={style.descriptionContainer}>
+        <div className={style.descriptionContainer}>
           <p className={style.textTitle}>Description</p>
-            <p className={style.text}>{product.description}</p>
-            </div>
-        
-     
+          <p className={style.text}>{product.description}</p>
+        </div>
       </div>
-      </div>
+    </div>
   );
 }

@@ -101,10 +101,14 @@ export default function CartContainer() {
             </div>
           ))}
         </div>
-        <form className={style.form} onSubmit={handleSubmit(handleDiscountSubmit)}>
+        <form
+          className={style.form}
+          onSubmit={handleSubmit(handleDiscountSubmit)}
+        >
           <div
             style={{ display: items.length === 0 ? "none" : "block" }}
-            className={style.formAllContainer}>
+            className={style.formAllContainer}
+          >
             <div className={style.formContainer}>
               <p className={style.orderDetails}>Order details</p>
               <p className={style.totalItems}>{items.length} items</p>

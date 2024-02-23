@@ -19,15 +19,15 @@ export default function MainPage(props) {
   return (
     <div>
       <div className={style.bannerContainer}>
-      <div className={style.banner}>
-        <p className={style.bannerText}>
-          Amazing Discounts on Garden Products!
-        </p>
-        <div className={style.ButtonCheckOutContainer}>
-          <ButtonCheckOut text="Check out" onClick={handleClick} />
+        <div className={style.banner}>
+          <p className={style.bannerText}>
+            Amazing Discounts on Garden Products!
+          </p>
+          <div className={style.ButtonCheckOutContainer}>
+            <ButtonCheckOut text="Check out" onClick={handleClick} />
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
       <div className="wrapper">
         <div className={style.linkButtonAllContainer}>
           <LinkButtonContainer title="Categories" />
