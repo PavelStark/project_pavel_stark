@@ -1,4 +1,4 @@
-.allProductsTitle {
+.all_products_title {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 64px;
@@ -6,19 +6,19 @@
 }
 
 @media (max-width: 768px) {
-  .allProductsTitle {
+  .all_products_title {
     font-size: 56px;
   }
 }
 
 @media (max-width: 480px) {
-  .allProductsTitle {
+  .all_products_title {
     font-size: 48px;
   }
 }
 
 @media (max-width: 360px) {
-  .allProductsTitle {
+  .all_products_title {
     font-size: 40px;
   }
 }

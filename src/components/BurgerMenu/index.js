@@ -6,7 +6,7 @@ export default function BurgerMenu() {
   const [active, setActive] = useState(false);
 
   return (
-    <div className={style.burgerMenuContainer}>
+    <div className={style.burger_menu_container}>
       <div
         className={
           active ? `${style.burger_menu_active}` : `${style.burger_menu}`

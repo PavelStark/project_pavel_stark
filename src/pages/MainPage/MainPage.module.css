@@ -1,4 +1,4 @@
-.bannerContainer {
+.banner_container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,11 +12,11 @@
   flex-direction: column;
 }
 
-.bannerText {
+.banner_text {
   font-weight: bolder;
   color: rgb(255, 255, 255);
   margin-top: 80px;
-  font-size: 96px;
+  font-size: clamp(52px, 8vw, 96px);
   font-weight: 700;
   width: 80%;
   margin-bottom: 40px;
@@ -24,7 +24,7 @@
   height: fit-content;
 }
 
-.categoriesNotAllContainer a {
+.categories_not_all_container a {
   text-decoration: none;
   color: rgb(40, 40, 40);
 }
@@ -36,7 +36,7 @@
   margin-bottom: 80px;
 }
 
-.linkButtonAllContainer {
+.link_button_all_container {
   margin-top: 80px;
   margin-bottom: 40px;
   display: flex;
@@ -44,80 +44,86 @@
   justify-content: space-between;
 }
 
-.ButtonCheckOutContainer button {
+.button_check_out_container button {
   margin-left: 40px;
   padding: 16px 56px 16px 56px;
 }
 
-.topSalesContainer {
+.top_sales_container {
   width: 100%;
 }
 
-.linkButtonCategoriesActive {
+.link_button_categories_active {
   display: none;
 }
-.linkButtonSalesActive {
+.link_button_sales_active {
   display: none;
+}
+
+.scroll_top{
+  width: 50px;
+  height: 50px;
+  background-color: red;
 }
 
 @media (max-width: 1000px) {
-  .ButtonCheckOutContainer {
+  .button_check_out_container {
     margin-left: -20px;
   }
 
-  .bannerText {
+  .banner_text {
     width: 97%;
-    font-size: 90px;
-    margin-right: 20px;
+/*     font-size: 90px;
+ */    margin-right: 20px;
     margin-left: 20px;
   }
-  .categoriesAllContainer {
+  .categories_all_container {
     gap: 20px;
     margin-bottom: 20px;
     height: fit-content;
   }
-  .categoriesAllContainer img {
+  .categories_all_container img {
     height: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  .bannerText {
+  /* .bannerText {
     font-size: 68px;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
-  .bannerText {
+  /* .bannerText {
     font-size: 60px;
-  }
+  } */
 
-  .ButtonCheckOutContainer button {
+  .button_check_out_container button {
     padding: 12px 52px 12px 52px;
   }
 }
 
 @media (max-width: 360px) {
-  .bannerText {
+  /* .bannerText {
     font-size: 52px;
-  }
-  .linkButtonSales {
+  } */
+  .link_button_sales {
     display: none;
   }
-  .linkButtonCategoriesActive {
+  .link_button_categories_active {
     margin-left: 90px;
     margin-top: 0px;
     margin-bottom: 60px;
     display: block;
   }
-  .linkButtonSalesActive {
+  .link_button_sales_active {
     margin-top: 20px;
     margin-left: 90px;
     margin-bottom: 30px;
     display: block;
   }
 
-  .linkButtonCategories {
+  .link_button_categories {
     display: none;
   }
 }

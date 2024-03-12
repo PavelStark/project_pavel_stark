@@ -1,4 +1,4 @@
-.allSalesTitle {
+.all_sales_title {
   margin-top: 20px;
   font-size: 64px;
   font-weight: 700;
@@ -6,20 +6,20 @@
 }
 
 @media (max-width: 768px) {
-  .allSalesTitle {
+  .all_sales_title {
     font-size: 56px;
   }
 }
 
 @media (max-width: 480px) {
-  .allSalesTitle {
+  .all_sales_title {
     font-size: 48px;
     width: 90%;
   }
 }
 
 @media (max-width: 431px) {
-  .allSalesTitle {
+  .all_sales_title {
     font-size: 40px;
   }
 }

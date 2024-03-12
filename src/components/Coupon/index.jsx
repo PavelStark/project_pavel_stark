@@ -19,15 +19,15 @@ export default function Coupon() {
 
   return (
     <div>
-      <div className={style.couponContainer}>
-        <div className={style.titleContainer}>
+      <div className={style.coupon_container}>
+        <div className={style.title_container}>
           <p className={style.title}>5% off on the first order</p>
         </div>
-        <div className={style.imgContainer}>
+        <div className={style.img_container}>
           <img src={HANDS} alt="HANDS" />
         </div>
         <form onSubmit={handleSubmit(handleDiscountSubmit)}>
-          <div className={style.formContainer}>
+          <div className={style.form_container}>
             <label htmlFor="name">
               <input
                 type="text"
@@ -35,7 +35,7 @@ export default function Coupon() {
                 name="name"
                 placeholder="Name"
                 {...register("name", {
-                  required: "The field is required",
+                  required: "",
                   minLength: {
                     value: 2,
                     message: "Name is too short...min length: 2",
@@ -56,7 +56,7 @@ export default function Coupon() {
                 name="phone"
                 placeholder="Phone number"
                 {...register("phone", {
-                  required: "The field is required",
+                  required: "",
                   pattern: {
                     value: "/(?+(?49)?[ ()]?([- ()]?d[- ()]?){10}/g",
                     message:
@@ -74,7 +74,7 @@ export default function Coupon() {
                 name="email"
                 placeholder="Email"
                 {...register("email", {
-                  required: "The field is required",
+                  required: "",
                   pattern: {
                     value: /^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/g,
                     message: "Email is not correct",
@@ -83,7 +83,7 @@ export default function Coupon() {
               />
               <p>{errors.email?.message}</p>
             </label>
-            <ButtonCoupon className={style.btn} type="submit" />
+            <ButtonCoupon btnTitle="Get a discount" className={style.btn} /* type="submit" */ />
           </div>
         </form>
       </div>

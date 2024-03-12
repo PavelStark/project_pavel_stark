@@ -10,7 +10,7 @@ export default function AllSalesPage() {
 
   return (
     <div className="wrapper">
-      <h2 className={style.allSalesTitle}>Discounted Items</h2>
+      <h2 className={style.all_sales_title}>Discounted Items</h2>
       <FilterProducts type="allSales" />
       <AllSalesContainer type="allSales" />
     </div>

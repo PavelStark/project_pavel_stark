@@ -40,7 +40,7 @@ a:hover {
   background-color: rgba(217, 217, 217, 1);
 }
 
-.cartCircleContainer {
+.cart_circle_container {
   width: 44px;
   height: 48px;
   position: relative;
@@ -59,7 +59,7 @@ a:hover {
   border-radius: 50%;
 }
 
-.cartCircleContainer img {
+.cart_circle_container img {
   width: 100%;
 }
 
@@ -68,17 +68,17 @@ a:hover {
   font-size: 12px;
   font-weight: 600;
 }
-.cartAndBurgerMenuContainer {
+.cart_and_burger_menu_container {
   display: flex;
   gap: 5px;
 }
 
-.cartLogoContainer {
+.cart_logo_container {
   display: flex;
   width: fit-content;
 }
 
-.cartLogoContainer img {
+.cart_logo_container img {
   width: 50px;
 }
 
@@ -107,7 +107,7 @@ a:hover {
     padding-right: 80px;
   }
 
-  .cartLogoContainer {
+  .cart_logo_container {
     width: 50px;
   }
 

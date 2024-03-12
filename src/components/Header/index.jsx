@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Header.module.css";
 import logo from "../../ui/logo.png";
-import cartLogo from "../../ui/basketLogo.png";
+import CARTLOGO from "../../ui/basketLogo.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import BurgerMenu from "../BurgerMenu";
@@ -17,6 +17,7 @@ export default function Header() {
   //--------------------------------------------------------------------------
 
   return (
+    
     <div className="wrapper">
       <header>
         <div>
@@ -40,17 +41,17 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className={style.basketItem}>
-          <div className={style.cartCircleContainer}>
+        <div className={style.basket_item}>
+          <div className={style.cart_circle_container}>
             <div
               style={{ display: selectTotalItemCount !== 0 ? "flex" : "none" }}
               className={style.circle}
             >
               <p>{selectTotalItemCount}</p>
             </div>
-            <div className={style.cartLogoContainer}>
+            <div className={style.cart_logo_container}>
               <Link to={"/cart/"}>
-                <img className={style.cartLogo} src={cartLogo} alt="CartLogo" />
+                <img className={style.cart_logo} src={CARTLOGO} alt="CartLogo" />
               </Link>
             </div>
           </div>
@@ -60,6 +61,7 @@ export default function Header() {
         </div>
       </header>
       <div className={style.line}></div>
-    </div>
+      </div>
+      
   );
 }

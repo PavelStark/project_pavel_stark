@@ -18,45 +18,45 @@ export default function MainPage(props) {
 
   return (
     <div>
-      <div className={style.bannerContainer}>
+      <div className={style.banner_container}>
         <div className={style.banner}>
-          <p className={style.bannerText}>
+          <p className={style.banner_text}>
             Amazing Discounts on Garden Products!
           </p>
-          <div className={style.ButtonCheckOutContainer}>
+          <div className={style.button_check_out_container}>
             <ButtonCheckOut text="Check out" onClick={handleClick} />
           </div>
         </div>
       </div>
       <div className="wrapper">
-        <div className={style.linkButtonAllContainer}>
+        <div className={style.link_button_all_container}>
           <LinkButtonContainer title="Categories" />
-          <div className={style.linkButtonCategories}>
+          <div className={style.link_button_categories}>
             <LinkButton buttonText="All Categories" link="/categories/all" />
           </div>
         </div>
 
-        <div className={style.categoriesNotAllContainer}>
+        <div className={style.categories_not_all_container}>
           <CategoriesContainer type="notAllCategories" />
         </div>
 
-        <div className={style.linkButtonCategoriesActive}>
+        <div className={style.link_button_categories_active}>
           <LinkButton buttonText="All Categories" link="/categories/all" />
         </div>
 
         <Coupon />
 
-        <div ref={saleRef} className={style.linkButtonAllContainer}>
+        <div ref={saleRef} className={style.link_button_all_container}>
           <LinkButtonContainer title="Sale" />
-          <div className={style.linkButtonSales}>
+          <div className={style.link_button_sales}>
             <LinkButton buttonText="All Sales" link="/sales/all" />
           </div>
         </div>
 
-        <div className={style.topSalesContainer}>
+        <div className={style.top_sales_container}>
           <ProductsContainer type="topSales" />
         </div>
-        <div className={style.linkButtonSalesActive}>
+        <div className={style.link_button_sales_active}>
           <LinkButton buttonText="All Sales" link="/sales/all" />
         </div>
       </div>

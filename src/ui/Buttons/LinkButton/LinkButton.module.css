@@ -1,4 +1,4 @@
-.linkButton {
+.link_button {
   white-space: nowrap;
   padding: 8px 16px;
   color: #8b8b8b;
@@ -10,19 +10,19 @@
   background-color: white;
 }
 
-.linkButton:hover {
+.link_button:hover {
   color: black;
   cursor: pointer;
 }
 
 @media (max-width: 480px) {
-  .linkButton {
+  .link_button {
     font-size: 14px;
   }
 }
 
 @media (max-width: 360px) {
-  .linkButton {
+  .link_button {
     padding: 12px 24px 12px 24px;
   }
 }

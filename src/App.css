@@ -7,24 +7,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .wrapper {
-  max-width: 1360px;
-  margin: 0 40px;
-}
-
-@media (max-width: 1360px) {
-  .wrapper {
-    margin: 0 40px;
-  }
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
   .wrapper {
     margin: 0 20px;
+    padding: 0;
   }
 }

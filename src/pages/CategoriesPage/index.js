@@ -9,7 +9,7 @@ export default function CategoriesPage() {
 
   return (
     <div className="wrapper">
-      <h2 className={style.CategoriesTitle}>Categories</h2>
+      <h2 className={style.categories_title}>Categories</h2>
       <CategoriesContainer type="allCategories" />
     </div>
   );

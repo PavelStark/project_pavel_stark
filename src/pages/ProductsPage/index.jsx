@@ -6,7 +6,7 @@ import FilteredProducts from "../../components/FilterProducts";
 export default function ProductsPage() {
   return (
     <div className="wrapper">
-      <h2 className={style.allProductsTitle}>All products</h2>
+      <h2 className={style.all_products_title}>All products</h2>
       <FilteredProducts />
       <ProductsContainer type="allProducts" />
     </div>

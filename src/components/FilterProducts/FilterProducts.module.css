@@ -1,4 +1,4 @@
-.SortAllContainer {
+.sort_all_container {
   display: flex;
   margin-bottom: 40px;
   align-items: center;
@@ -7,20 +7,21 @@
   flex-wrap: wrap;
 }
 
-.SortAllContainer label {
+.sort_all_container label {
   margin-right: 16px;
 }
 
-.SortAllContainer input {
+.sort_all_container input {
   margin-right: 40px;
 }
 
-.PriceSortContainer {
+.price_sort_container {
   display: flex;
+  width: fit-content;
   align-items: center;
 }
 
-.formContainer input {
+.form_container input {
   width: 112px;
   height: 36px;
   border: 1px solid rgb(139, 139, 139);
@@ -34,16 +35,16 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-.rightChild {
+.right_child {
   margin-left: -20px;
 }
 
-.filterContainer {
+.filter_container {
   display: flex;
   align-items: center;
 }
 
-.myCheckbox {
+.my_checkbox {
   width: 36px;
   height: 36px;
   position: relative;
@@ -55,7 +56,7 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-appearance: none;
 }
 
-.myCheckbox:checked:before {
+.my_checkbox:checked:before {
   left: -2px;
   top: -2px;
   content: "";
@@ -68,7 +69,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgb(51, 153, 51);
 }
 
-.myCheckbox:checked:after {
+.my_checkbox:checked:after {
   appearance: none;
   content: "";
   display: block;
@@ -84,7 +85,7 @@ input[type="number"]::-webkit-outer-spin-button {
   left: 12px;
 }
 
-.SortedContainer select {
+.sorted_container select {
   font-weight: 500;
   text-indent: 15px;
   width: 200px;
@@ -93,37 +94,41 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 6px;
 }
 
-@media (max-width: 967px) {
-  .PriceSortContainer {
-    width: 90%;
+@media (max-width: 1000px) {
+  .price_sort_container {
+    width: fit-content;
     margin-bottom: 20px;
   }
 
-  .filterContainer {
+  .filter_container {
+    margin-bottom: 20px;
+  }
+
+  .sorted_container select {
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 440px) {
-  .formContainer {
+  .form_container {
     width: fit-content;
   }
-  .PriceSortContainer {
+  .price_sort_container {
     width: 90%;
   }
 
-  .SortAllContainer label {
+  .sort_all_container label {
     margin-right: 16px;
   }
 
-  .SortAllContainer input {
+  .sort_all_container input {
     margin-right: 40px;
   }
-  .formContainer {
+  .form_container {
     display: flex;
   }
 
-  .rightChild {
+  .right_child {
     margin-left: -20px;
   }
 }

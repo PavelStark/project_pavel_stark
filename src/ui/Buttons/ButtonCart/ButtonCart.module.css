@@ -1,0 +1,28 @@
+.cart_btn {
+  background-color: green;
+  padding: 16px 32px 16px 32px;
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  color: white;
+}
+
+.cart_btn:hover {
+  color: white;
+  background-color: #000000;
+}
+
+.cart_btn_active {
+  padding: 16px 32px 16px 32px;
+  background-color: rgb(241, 243, 244);
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  color: black;
+}

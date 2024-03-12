@@ -9,6 +9,7 @@ const DELITE_ITEM = "DELITE_ITEM";
 const COUNT_CART_INCR = "COUNT_CART_INCR";
 const COUNT_CART_DECR = "COUNT_CART_DECR";
 const SUM_TOTAL = "SUM_TOTAL";
+const CLEAR_CART = "CLEAR_CART";
 
 export const cartReducer = (state = defaultState, action) => {
   switch (action.type) {
@@ -73,6 +74,13 @@ export const cartReducer = (state = defaultState, action) => {
         ...state,
         items: deliteItem,
       };
+    
+    case CLEAR_CART:
+      let clearCart = state.items.filter((elem) => elem === action.payload);
+      return {
+        ...state,
+        items: clearCart,
+      };
 
     default:
       return state;
@@ -81,12 +89,7 @@ export const cartReducer = (state = defaultState, action) => {
 
 export const addItemAction = (payload) => ({ type: ADD_ITEM, payload });
 export const sumTotalAction = (payload) => ({ type: SUM_TOTAL, payload });
-export const countCartIncrAction = (payload) => ({
-  type: COUNT_CART_INCR,
-  payload,
-});
-export const countCartDecrAction = (payload) => ({
-  type: COUNT_CART_DECR,
-  payload,
-});
+export const countCartIncrAction = (payload) => ({type: COUNT_CART_INCR,payload,});
+export const countCartDecrAction = (payload) => ({type: COUNT_CART_DECR,payload,});
 export const deliteItemAction = (payload) => ({ type: DELITE_ITEM, payload });
+export const clearCartAction = (payload) => ({ type: CLEAR_CART, payload });

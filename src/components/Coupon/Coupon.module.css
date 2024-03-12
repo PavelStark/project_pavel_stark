@@ -1,5 +1,5 @@
-.couponContainer {
-  margin-top: 32px;
+.coupon_container {
+  margin-top: 72px;
   border-radius: 12px;
   width: 100%;
   height: 486px;
@@ -25,12 +25,12 @@
   text-align: center;
 }
 
-.titleContainer {
+.title_container {
   width: fit-content;
   margin: 0 auto;
 }
 
-.imgContainer {
+.img_container {
   width: 748px;
   position: absolute;
   left: 12px;
@@ -38,14 +38,14 @@
   object-fit: cover;
 }
 
-.imgContainer img {
+.img_container img {
   width: 100%;
   height: 360px;
   margin: 0px 0px 0px 32px;
   object-fit: cover;
 }
 
-.formContainer {
+.form_container {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -54,7 +54,7 @@
   margin-bottom: 40px;
 }
 
-.formContainer input {
+.form_container input {
   width: 100%;
   margin-bottom: 16px;
   border: 1px solid white;
@@ -66,25 +66,25 @@
   color: white;
 }
 
-.formContainer input::placeholder {
+.form_container input::placeholder {
   color: white;
   text-indent: 30px;
 }
 
 @media (max-width: 1000px) {
-  .imgContainer {
+  .img_container {
     position: absolute;
     left: -130px;
     bottom: -4px;
   }
 
-  .imgContainer img {
+  .img_container img {
     width: 602px;
     height: 308px;
     margin: 0 20px;
   }
 
-  .formContainer input {
+  .form_container input {
     width: 110%;
     margin-bottom: 16px;
     border: 1px solid white;
@@ -95,7 +95,7 @@
 }
 
 @media (max-width: 768px) {
-  .imgContainer {
+  .img_container {
     position: absolute;
     left: -250px;
     bottom: -4px;
@@ -108,7 +108,7 @@
 }
 
 @media (max-width: 480px) {
-  .couponContainer {
+  .coupon_container {
     display: block;
     height: 592px;
   }
@@ -116,20 +116,20 @@
     font-size: 48px;
     margin-top: -20px;
   }
-  .formContainer {
+  .form_container {
     margin-bottom: 220px;
   }
-  .formContainer input {
+  .form_container input {
     height: 47px;
     width: 270%;
     margin-left: -240px;
     margin-bottom: 8px;
   }
-  .imgContainer img {
+  .img_container img {
     width: 418px;
     height: 214px;
   }
-  .imgContainer {
+  .img_container {
     left: -15px;
   }
 }
@@ -140,13 +140,13 @@
     padding: 24px 10px 0px 10px;
     margin-top: 0;
   }
-  .formContainer input {
+  .form_container input {
     height: 47px;
     width: 270%;
     margin-left: -165px;
     margin-bottom: 8px;
   }
-  .imgContainer {
+  .img_container {
     left: -80px;
   }
 }

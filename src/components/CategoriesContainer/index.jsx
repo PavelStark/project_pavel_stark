@@ -17,8 +17,8 @@ export default function CategoriesContainer({ type }) {
     <div
       className={
         type === "notAllCategories"
-          ? `${style.categoriesNotAllContainer}`
-          : `${style.categoriesContainer}`
+          ? `${style.categories_not_all_container}`
+          : `${style.categories_container}`
       }
     >
       {categories.map((elem) => (
@@ -26,10 +26,10 @@ export default function CategoriesContainer({ type }) {
           <div>
             <img
               alt="categorieImage"
-              className={style.categoryImage}
+              className={style.category_image}
               src={ROOT_URL + elem.image}
             />
-            <p className={style.categoryTitle}>{elem.title}</p>
+            <p className={style.category_title}>{elem.title}</p>
           </div>
         </Link>
       ))}

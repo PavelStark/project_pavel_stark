@@ -1,7 +1,7 @@
 .modal {
+  background-color: rgba(40, 40, 40, 0.4);
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   /* height: 236px; */
 }
 
-.textContainer {
+.text_container {
   position: relative;
   margin: 32px;
   gap: 24px;
@@ -44,14 +44,14 @@
   font-weight: 600;
 }
 
-.textContainer img {
+.text_container img {
   font-size: 30px;
   right: 0;
   top: 0;
   position: absolute;
 }
 
-.textContainer img:hover {
+.text_container img:hover {
   cursor: pointer;
   border: 1px solid white;
 }

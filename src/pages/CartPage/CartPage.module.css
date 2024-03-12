@@ -1,7 +1,13 @@
-.linkButtonAllContainer {
+.link_button_all_container {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
   align-items: center;
   max-width: 1400px;
+}
+
+@media (max-width: 480px) {
+  .link_button_all_container {
+    
+  }
 }

@@ -7,9 +7,9 @@ import ButtonCheckOut from "../../ui/Buttons/ButtonCheckOut";
 export default function NotFoundPage() {
   return (
     <div className="wrapper">
-      <div className={style.notFoundPageContainer}>
+      <div className={style.not_found_page_container}>
         <img
-          className={style.notFoundPageImage}
+          className={style.not_found_page_image}
           src={notFoundPageImage}
           alt="NotFoundPageImage"
         ></img>
@@ -18,7 +18,7 @@ export default function NotFoundPage() {
           We’re sorry, the page you requested could not be found. Please go back
           to the homepage.
         </p>
-        <div className={style.btnContainer}>
+        <div className={style.btn_container}>
           <Link to="/">
             <ButtonCheckOut text="Go Home" />
           </Link>

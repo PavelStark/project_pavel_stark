@@ -31,13 +31,13 @@ export default function FilterProducts({ type }) {
   }
 
   return (
-    <div className={style.SortAllContainer}>
-      <div className={style.PriceSortContainer}>
+    <div className={style.sort_all_container}>
+      <div className={style.price_sort_container}>
         <label>Price</label>
-        <form className={style.formContainer} onKeyUp={priceFormHandler}>
+        <form className={style.form_container} onKeyUp={priceFormHandler}>
           <input type="number" name="from" placeholder="from" />
           <input
-            className={style.rightChild}
+            className={style.right_child}
             type="number"
             name="to"
             placeholder="to"
@@ -45,17 +45,17 @@ export default function FilterProducts({ type }) {
         </form>
       </div>
       <div
-        className={style.filterContainer}
+        className={style.filter_container}
         style={{ display: type === "allSales" ? "none" : "flex" }}
       >
         <label>Discounted items</label>
         <input
-          className={style.myCheckbox}
+          className={style.my_checkbox}
           onClick={SaleHandleBox}
           type="checkbox"
         />
       </div>
-      <div className={style.SortedContainer}>
+      <div className={style.sorted_container}>
         <label>Sorted</label>
         <select onChange={Sort} id="dropdown" name="Sort">
           <option value="default">by default</option>

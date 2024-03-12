@@ -36,15 +36,26 @@ export default function SingleProductContainer() {
 
   return (
     <div className="wrapper">
-      <div className={style.singleProductContainer}>
-        <div className={style.productImageContainer}>
+      <div className={style.single_product_container}>
+        <div className={style.product_image_container}>
           <img alt="Product" src={ROOT_URL + product.image} />
+          
         </div>
-
+        <div className={style.product_image_container_active}>
+          <img alt="Product" src={ROOT_URL + product.image} />
+          <div
+              className={style.sale_percent_container_active}
+              style={{ display: product.discont_price ? "block" : "none" }}
+            >
+              <p className={style.sale}>{saleHandle()}</p>
+            </div>
+        </div>
+        
+<div className={style.info}>
         <h2 className={style.title}>{product.title}</h2>
-        <div className={style.pricePlusMinusButtonContainer}>
-          <div className={style.priceContainer}>
-            <p className={style.salePrice}>
+        <div className={style.price_plus_minus_button_container}>
+          <div className={style.price_container}>
+            <p className={style.sale_price}>
               {product.discont_price
                 ? "$" + (product.discont_price * product.count).toFixed(2)
                 : "$" + (product.price * product.count).toFixed(2)}
@@ -53,17 +64,19 @@ export default function SingleProductContainer() {
               {product.discont_price
                 ? "$" + (product.price * product.count).toFixed(2)
                 : ""}
-            </p>
+              </p>
+              <div className={style.sale_percent_container_none}>
             <div
-              className={style.salePercentContainer}
+              className={style.sale_percent_container}
               style={{ display: product.discont_price ? "block" : "none" }}
             >
               <p className={style.sale}>{saleHandle()}</p>
-            </div>
+                </div>
+                </div>
           </div>
-          <div className={style.addProductContainer}>
-            <div className={style.plusAndMinusAndButtonContainer}>
-              <div className={style.plusAndMinusContainer}>
+          <div className={style.add_product_container}>
+            <div className={style.plus_and_minus_and_button_container}>
+              <div className={style.plus_and_minus_container}>
                 <div
                   onClick={() => dispatch(changeCountItemAction(-1))}
                   className={style.minus}
@@ -80,7 +93,7 @@ export default function SingleProductContainer() {
                   <img src={plus} alt="" />
                 </div>
               </div>
-              <div className={style.btnContainer}>
+              <div className={style.btn_container}>
                 <ButtonAddToCart
                   onClick={() => dispatch(addItemAction(product))}
                   title="Add to cart"
@@ -89,11 +102,16 @@ export default function SingleProductContainer() {
             </div>
           </div>
         </div>
-        <div className={style.descriptionContainer}>
-          <p className={style.textTitle}>Description</p>
+        <div className={style.description_container}>
+          <p className={style.text_title}>Description</p>
+          <p className={style.text}>{product.description}</p>
+          </div>
+</div>
+      </div>
+      <div className={style.description_container_active}>
+          <p className={style.text_title}>Description</p>
           <p className={style.text}>{product.description}</p>
         </div>
-      </div>
     </div>
   );
 }

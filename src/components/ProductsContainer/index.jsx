@@ -37,19 +37,19 @@ export default function ProductContainer({ type }) {
   //----------------------------------------------------------------------------
 
   return (
-    <div className={style.productsContainer}>
+    <div className={style.products_container}>
       {filtered_prodcuts.map((elem) => (
         <Link to={"/products/" + elem.id} key={elem.id}>
           <div>
-            <div className={style.imageContainer}>
+            <div className={style.image_container}>
               <img alt="Products" src={ROOT_URL + elem.image} />
               <div
-                className={style.salePercent}
+                className={style.sale_percent}
                 style={{ display: elem.discont_price ? "block" : "none" }}
               >
                 <p>-{elem.percent}%</p>
               </div>
-              <div className={style.btnContainer}>
+              <div className={style.btn_container}>
                 <ButtonAddToCart
                   onClick={(event) => {
                     event.preventDefault();
@@ -58,11 +58,11 @@ export default function ProductContainer({ type }) {
                   title="Add to cart"
                 />
               </div>
-              <div className={style.productInfo}>
+              <div className={style.product_info}>
                 <abbr title={elem.title}>
-                  <p className={style.productTitle}>{elem.title}</p>
+                  <p className={style.product_title}>{elem.title}</p>
                 </abbr>
-                <div className={style.priceContainer}>
+                <div className={style.price_container}>
                   <p>
                     {elem.discont_price
                       ? "$" + elem.discont_price.toFixed(2)

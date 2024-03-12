@@ -13,16 +13,16 @@ import {
   deliteItemAction,
   sumTotalAction,
 } from "../../store/reducers/cartReducer";
-import MainButton from "../../ui/Buttons/ButtonAddToCart/ButtonAddToCart";
 import ModalWindow from "../modalWindow";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ButtonCheckOut from "../../ui/Buttons/ButtonCheckOut";
 import { useForm } from "react-hook-form";
+import ButtonCart from "../../ui/Buttons/ButtonCart";
 
 export default function CartContainer() {
-  const { items, sumTotal, countItems } = useSelector((store) => store.cart);
+  const { items, sumTotal, } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
-  const { id } = useParams();
+  
 
   const {
     register,
@@ -36,29 +36,31 @@ export default function CartContainer() {
     reset();
   };
 
+
   useEffect(() => {
+    window.scrollTo(0, 0);
     dispatch(sumTotalAction());
-  }, [items, countItems, id, dispatch]);
+  }, [dispatch]);
 
   const [modalActive, setModalActive] = useState(false);
 
   return (
     <div>
-      <div className={style.linkButtonAllContainer}>
+      <div className={style.link_button_all_container}>
         <LinkButtonContainer title="Shopping cart" />
-        <div className={style.buttonNone}>
+        <div className={style.button_none}>
           <LinkButton buttonText="Back to the store" link="/products/all" />
         </div>
       </div>
-      <div className={style.cartPageContainer}>
-        <div className={style.cartPageContainerLetf}>
+      <div className={style.cart_page_container}>
+        <div className={style.cart_page_container_left}>
           {items.map((elem) => (
-            <div className={style.cardContainer}>
-              <div className={style.imageContainer}>
+            <div className={style.card_container}>
+              <div className={style.image_container}>
                 <img src={ROOT_URL + elem.image} alt="Item" />
               </div>
-              <div className={style.cardInfoContainer}>
-                <div className={style.TitleAndCloseContainer}>
+              <div className={style.card_info_container}>
+                <div className={style.title_and_close_container}>
                   <p>{elem.title}</p>
                   <img
                     onClick={() => dispatch(deliteItemAction(elem.id))}
@@ -66,8 +68,8 @@ export default function CartContainer() {
                     alt=""
                   />
                 </div>
-                <div className={style.plusMinusAndPriceContainer}>
-                  <div className={style.plusMinusContainer}>
+                <div className={style.plus_minus_and_price_container}>
+                  <div className={style.plus_minus_container}>
                     <div
                       onClick={() => dispatch(countCartDecrAction(elem.id))}
                       className={style.minus}
@@ -84,7 +86,7 @@ export default function CartContainer() {
                       <img src={plus} alt="" />
                     </div>
                   </div>
-                  <div className={style.priceContainer}>
+                  <div className={style.price_container}>
                     <p>
                       {elem.discont_price
                         ? "$" + (elem.discont_price * elem.count).toFixed(2)
@@ -103,21 +105,18 @@ export default function CartContainer() {
         </div>
         <form
           className={style.form}
+          style={{ display: items.length === 0 ? "none" : "block" }}
           onSubmit={handleSubmit(handleDiscountSubmit)}
         >
-          <div
-            style={{ display: items.length === 0 ? "none" : "block" }}
-            className={style.formAllContainer}
-          >
-            <div className={style.formContainer}>
-              <p className={style.orderDetails}>Order details</p>
-              <p className={style.totalItems}>{items.length} items</p>
-              <div className={style.totalAndPriceContainer}>
+            <div className={style.form_container}>
+              <p className={style.order_details}>Order details</p>
+              <p className={style.total_items}>{items.length} items</p>
+              <div className={style.total_and_price_container}>
                 <p className={style.total}>Total</p>
-                <p className={style.totalPrice}>${sumTotal}</p>
+                <p className={style.total_price}>${sumTotal}</p>
               </div>
             </div>
-            <div className={style.inputContainer}>
+            <div className={style.input_container}>
               <label htmlFor="name">
                 <input
                   type="text"
@@ -125,7 +124,7 @@ export default function CartContainer() {
                   name="name"
                   placeholder="Name"
                   {...register("name", {
-                    required: "The field is required",
+                    required: "",
                     minLength: {
                       value: 2,
                       message: "Name is too short...min length: 2",
@@ -145,7 +144,7 @@ export default function CartContainer() {
                   name="phone"
                   placeholder="Phone number"
                   {...register("phone", {
-                    required: "The field is required",
+                    required: "",
                     pattern: {
                       value: "/(?+(?49)?[ ()]?([- ()]?d[- ()]?){10}/g",
                       message:
@@ -157,13 +156,13 @@ export default function CartContainer() {
               </label>
               <label htmlFor="Email">
                 <input
-                  className={style.lastInput}
+                  className={style.last_input}
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Email"
                   {...register("email", {
-                    required: "The field is required",
+                    required: "",
                     pattern: {
                       value: /^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/g,
                       message: "Email is not correct",
@@ -172,29 +171,27 @@ export default function CartContainer() {
                 />
                 <p>{errors.email?.message}</p>
               </label>
-              <MainButton
-                widthBtn={484}
-                title="Order"
+              <ButtonCart
+                btnTitle="Order"
                 onClick={() => setModalActive(true)}
               />
             </div>
-          </div>
         </form>
         <div style={{ display: items.length > 0 ? "none" : "block" }}>
-          <p className={style.emptyBasketText}>
+          <p className={style.empty_basket_text}>
             Looks like you have no items in your basket currently.
           </p>
-          <div className={style.buttonContainer}>
+          <div className={style.button_container}>
             <Link to="/products/all">
               <ButtonCheckOut text="Continue Shopping" />
             </Link>
           </div>
         </div>
       </div>
-      <div className={style.linkButtonAllContainer2}>
+      <div className={style.link_button_all_container2}>
         <LinkButton buttonText="Back to the store" link="/products/all" />
       </div>
-      <ModalWindow active={modalActive} setActive={setModalActive} />
-    </div>
+        <ModalWindow type="cartPage" active={modalActive} setActive={setModalActive} />
+  </div>
   );
 }

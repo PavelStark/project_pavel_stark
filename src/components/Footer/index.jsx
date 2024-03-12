@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="wrapper">
       <p className={style.contact}>Contact</p>
-      <div className={style.footerContainer}>
+      <div className={style.footer_container}>
         <div className={style.phone}>
           <p className={style.thin}>Phone</p>
           <p className={style.bold}>+49 999 999 99 99</p>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
             <div>
               <Link to="https://www.whatsapp.com/" target="blank">
-                <img className={style.whatsApp} src={whatsApp} alt="WhatsApp" />
+                <img className={style.whats_app} src={whatsApp} alt="WhatsApp" />
               </Link>
             </div>
           </div>

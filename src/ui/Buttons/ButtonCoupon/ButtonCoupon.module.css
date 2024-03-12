@@ -1,6 +1,5 @@
-.couponBtn {
+.coupon_btn {
   padding: 16px 32px 16px 32px;
-  margin-top: 16px;
   background-color: #fff;
   border: 0px solid #ccc;
   border-radius: 6px;
@@ -10,13 +9,25 @@
   width: 100%;
 }
 
-.couponBtn:hover {
+.coupon_btn:hover {
   color: white;
   background-color: #000000;
 }
 
+.coupon_btn_active{
+  padding: 16px 32px 16px 32px;
+  background-color: rgb(241, 243, 244);
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  color: green;
+}
+
 @media (max-width: 1000px) {
-  .couponBtn {
+  .coupon_btn {
     margin-left: -20px;
     width: 110%;
   }
@@ -26,7 +37,7 @@
 }
 
 @media (max-width: 480px) {
-  .couponBtn {
+  .coupon_btn {
     margin-left: -240px;
     width: 270%;
     margin-top: 8px;
@@ -34,7 +45,7 @@
 }
 
 @media (max-width: 360px) {
-  .couponBtn {
+  .coupon_btn {
     margin-left: -165px;
     width: 270%;
     margin-top: 8px;
