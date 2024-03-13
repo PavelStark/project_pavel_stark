@@ -24,7 +24,13 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
+  .title {
+    white-space: wrap;
+  }
+}
+
+@media (max-width: 500px) {
   .title {
     font-size: 48px;
   }
